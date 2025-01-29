@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Tracker - Manage Your Expenses</title>
+    <meta name="description" content="A beautiful and simple personal finance tracker to help manage your expenses and budget.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="%PUBLIC_URL%/styles.css">
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" type="image/x-icon">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Loading Animation -->
+    <div id="loading" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+    </div>
+
+    <div class="relative min-h-screen">
+        <!-- Navbar -->
+        <nav class="bg-blue-600 text-white p-4 shadow-lg">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="text-xl font-bold flex items-center">
+                    <img src="logo.png" alt="Logo" class="h-8 mr-2">
+                    Finance Tracker
+                </a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="container mx-auto text-center my-20">
+            <h1 class="text-4xl font-extrabold text-gray-800">Track Your Expenses Easily</h1>
+            <p class="text-gray-600 mt-4">Stay on top of your finances with our simple yet powerful finance tracker.</p>
+            <a href="/" class="mt-6 inline-block bg-blue-600 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-700 transition">
+                Get Started
+            </a>
+        </section>
+    </div>
+
+    <!-- Hide Loader Once Content is Loaded -->
+    <script>
+        window.onload = function () {
+            document.getElementById("loading").style.display = "none";
+        };
+    </script>
+
+</body>
+</html>

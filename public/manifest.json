@@ -1,0 +1,15 @@
+{
+    "short_name": "FinanceTracker",
+    "name": "Finance Tracker - Personal Budget Manager",
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "theme_color": "#2563EB",
+    "background_color": "#FFFFFF"
+}
