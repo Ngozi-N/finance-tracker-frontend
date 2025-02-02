@@ -5,7 +5,7 @@ FROM node:18-alpine
 WORKDIR /app
 
 # Copy package.json first
-COPY package.json package-lock.json ./
+COPY package.json .
 
 # Force npm to use default registry and avoid network issues
 RUN npm install --registry=https://registry.npmjs.org/
@@ -21,3 +21,4 @@ EXPOSE 3000
 
 # Start the application
 CMD ["npm", "start"]
+
